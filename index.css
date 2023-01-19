@@ -24,6 +24,11 @@
   margin-left: 15px;
 }
 
+.nav-item:hover {
+  color: green;
+  cursor: pointer;
+}
+
 #nav-list,
 #nav-add-new,
 #nav-contact {
@@ -37,6 +42,15 @@ h3 {
   margin: 0;
 }
 
+ul li {
+  list-style: none;
+}
+
+#contact-ul li {
+  padding: 4px 0;
+  list-style: circle;
+}
+
 #nav-bar nav ul {
   display: flex;
   align-items: center;
@@ -48,12 +62,12 @@ h3 {
 
 #nav-bar nav ul li {
   margin: 4px 0;
-  padding: 0 12px
+  padding: 0 12px;
 }
 
 #nav-bar nav ul li:nth-child(2) {
-  border-left: 3px solid #000000;
-  border-right: 3px solid #000000;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
 }
 
 #time {
@@ -84,18 +98,9 @@ h3 {
   margin-bottom: 20px;
 }
 
-ul li {
-  list-style: none;
-}
-
 #contact-ul {
   display: inline-block;
   margin-left: 40px;
-}
-
-#contact-ul li {
-  padding: 4px 0;
-  list-style: circle;
 }
 
 #contact-ul li p {
@@ -219,7 +224,7 @@ body {
   align-items: center;
 }
 
-.add-book-form>* {
+.add-book-form > * {
   width: 100%;
 }
 
@@ -230,7 +235,7 @@ body {
   border-radius: 7px;
 }
 
-.add-book-form>input[type='submit'] {
+.add-book-form > input[type='submit'] {
   align-self: flex-end;
   width: fit-content;
   border: 4px solid #000;
@@ -238,14 +243,14 @@ body {
   padding: 0.5em 1em;
 }
 
-.add-book-form>input[type='submit']:hover,
-.add-book-form>input[type='submit']:focus {
+.add-book-form > input[type='submit']:hover,
+.add-book-form > input[type='submit']:focus {
   background-color: #000;
   color: #fff;
   box-shadow: none;
 }
 
-.add-book-form>input[type='submit']:active {
+.add-book-form > input[type='submit']:active {
   background-color: #fff;
   color: #000;
   box-shadow: none;
